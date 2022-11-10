@@ -1,50 +1,48 @@
 function changeNavColor(a) {
-    if (a == "design"){
-        document.querySelectorAll('[wm-nav]').forEach(link => {
-        link.classList.add("colornavbar");
-      })
-      
-      let mybutton = document.getElementById("myLogo");
-      mybutton.innerHTML = "Avocado Production";
-      mybutton.classList.add("colornavbar")
+  if (a == "design"){
+      document.querySelectorAll('[wm-nav]').forEach(link => {
+      link.classList.add("colornavbar");
+      link.style.color = "#86cd60";
+    })
 
-      let projectmenu = document.getElementById("project");
-      projectmenu.classList.remove("colornavbar")
+    let mybutton = document.getElementById("nav-title");
+    mybutton.innerHTML = "Avocado Production";
+    mybutton.style.color = "#86cd60";
+    mybutton.setAttribute("href", "#design")
+    
+    let mynavChangeDesign = document.getElementById("design")
+    mynavChangeDesign.setAttribute("wm-nav", "src/projects.html")
 
-      let mynavChangeContact = document.getElementById("contact")
-      mynavChangeContact.setAttribute("wm-nav", "src/contact_design.html")
+    let mynavChangeProject = document.getElementById("project")
+    mynavChangeProject.setAttribute("wm-nav", "src/design.html")  
+    mynavChangeProject.style.color = "#fff"   
 
-      let mynavChangeDesign = document.getElementById("design")
-      mynavChangeDesign.setAttribute("wm-nav", "src/projects.html")
+    mynavChangeDesign.id = "photography"
+    mynavChangeDesign.innerHTML = "Photography"  
 
-      let mynavChangeProject = document.getElementById("project")
-      mynavChangeProject.setAttribute("wm-nav", "src/design.html")     
+  }else if(a == "project"){ } 
+  else if(a == "contact"){ } 
+  else {
+      document.querySelectorAll('[wm-nav]').forEach(link => {
+      link.style.color = "#F89100";
+    })
+    
+    let mybutton = document.getElementById("nav-title");
+    mybutton.innerHTML = "Allandefranca";
+    mybutton.style.color = "#F89100";
+    mybutton.setAttribute("href", "index.html")
 
-      mynavChangeDesign.id = "photography"
-      mynavChangeDesign.innerHTML = "Photography"
-    }else if(a == "project"){ } 
-    else if(a == "contact"){ } 
-    else {
-        document.querySelectorAll('[wm-nav]').forEach(link => {
-        link.classList.remove("colornavbar")
-      })
-      
-      let mylogo = document.getElementById("myLogo");
-      mylogo.classList.remove("colornavbar")
-      mylogo.innerHTML = "Allandefranca";
 
-      let mynavChange = document.getElementById("contact")
-      mynavChange.setAttribute("wm-nav", "src/contact_photo.html")
+    let mynavChangeDesign = document.getElementById("photography")
+    mynavChangeDesign.setAttribute("wm-nav", "src/design.html")
 
-      let mynavChangeDesign = document.getElementById("photography")
-      mynavChangeDesign.setAttribute("wm-nav", "src/design.html")
+    let mynavChangeProject = document.getElementById("project")
+    mynavChangeProject.setAttribute("wm-nav", "src/projects.html")
+    mynavChangeProject.style.color = "#fff" 
 
-      let mynavChangeProject = document.getElementById("project")
-      mynavChangeProject.setAttribute("wm-nav", "src/projects.html")
-
-      mynavChangeDesign.id = "design"
-      mynavChangeDesign.innerHTML = "Design"
-    } 
+    mynavChangeDesign.id = "design"
+    mynavChangeDesign.innerHTML = "Design"
+  } 
 
 
 }

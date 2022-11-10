@@ -16,16 +16,27 @@
   <!-- Top Link -->
     <!-- Header Start -->
     <header>
-        <nav>
-            <ul id="mynavbar" class="topnav">
-                <li><a href wm-nav="src/projects.html" id="project" class="active" >Projects</a></li>
-                <li><a href wm-nav="src/design.html" id="design">Design</a></li>
-                <li><a href wm-nav="src/contact_photo.html" id="contact" >Contact</a></li> 
-                <div class="logo">  
-                    <li><a href="Index.html" id="myLogo">Allandefranca</a></li>  
-                </div>
-            </ul>  
-        </nav>
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            <a href="index.html" id="nav-title">Allandefranca</a>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check" id="nav-check">
+            <span id="nav-span"></span>
+            <span id="nav-span"></span>
+            <span id="nav-span"></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href wm-nav="src/projects.html" id="project" style="color:white" >Projects</a></li>
+          <a href wm-nav="src/design.html" id="design">Design</a>
+          <a href wm-nav="src/contact_photo.html" id="contact" >Contact</a>
+        </div>
+      </div>
     </header>
 
     <!-- Header End -->
