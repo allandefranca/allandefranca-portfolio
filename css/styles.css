@@ -1,0 +1,193 @@
+/* Nav Start */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10%;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: #F89100;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: white;
+}  
+
+.logo {
+  float: right;
+  font-size: 25px;
+  padding-right: 1%;
+}
+
+.active {
+  color: white;
+}
+
+.colornavbar{
+  color:#86cd60;
+} 
+
+/* Nav End */
+
+ul {
+  list-style: none;
+}
+
+
+/* Responsive image gallery rules begin*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0%;
+}
+
+.image-gallery > li {
+  flex-basis: 609px; /*width: 350px;*/
+  position: relative;
+  cursor: pointer;
+}
+
+.image-gallery::after {
+  content: "";
+  flex-basis: 350px;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+ /* Responsive image gallery (design page)*/
+.image-gallery2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-left: 0%;
+}
+
+.image-gallery2 > li {
+  flex-basis: 900px; /*width: 350px;*/
+  position: relative;
+  cursor: pointer;
+}
+
+.image-gallery2::after {
+  content: "";
+  flex-basis: 350px;
+}
+
+.image-gallery2 li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57, 57, 57, 0.502);
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #fff;
+  border-radius: 5px;
+  /* center overlay text */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* hover */
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+/* Responsive image gallery rules ending*/
+
+.thinks {
+  color: #F89100;
+  font-size: 50px;
+  padding-left: 10%;
+}
+
+.thinks2 {
+  color: #86cd60;
+  font-size: 50px;
+  padding-left: 10%;
+}
+
+body {
+  background-color: #262626;
+}
+
+.footer {
+  text-align: center;
+}
+
+/* favicon */
+.fa {
+  padding: 10px;
+  font-size: 25px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  color: #555;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.contact {
+  padding-top: 5%;
+  padding-left: 10%;
+  font-size: 16px;
+  color: #fff;
+}
+
+#myBtn {
+display: none;
+position: fixed;
+bottom: 20px;
+right: 30px;
+z-index: 99;
+font-size: 16px;
+border: none;
+outline: none;
+background-color: rgb(100, 100, 100);
+opacity: 50%;
+color: white;
+cursor: pointer;
+padding: 20px;
+border-radius: 50%;
+text-align: center;
+text-decoration: none;  
+}
+
+/*On Hover Color Change*/
+#myBtn:hover {
+opacity: 80%;
+}

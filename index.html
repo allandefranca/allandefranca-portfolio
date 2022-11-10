@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Allandefranca - Portfolio</title>
+</head>
+
+<!-- Body Start -->
+<body>
+  <!-- Top Link -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <!-- Top Link -->
+    <!-- Header Start -->
+    <header>
+        <nav>
+            <ul id="mynavbar" class="topnav">
+                <li><a href wm-nav="src/projects.html" id="project" class="active" >Projects</a></li>
+                <li><a href wm-nav="src/design.html" id="design">Design</a></li>
+                <li><a href wm-nav="src/contact_photo.html" id="contact" >Contact</a></li> 
+                <div class="logo">  
+                    <li><a href="Index.html" id="myLogo">Allandefranca</a></li>  
+                </div>
+            </ul>  
+        </nav>
+    </header>
+
+    <!-- Header End -->
+        <section id="content">
+            <div class="thinks">
+                <p>
+                    .Photography <br>                      
+                    .Design <br>
+                    .Filmmaker <br>
+                </p>
+            </div>
+            <div class="container">
+                <ul class="image-gallery">
+                  <li>
+                    <img src="img/food1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/food2.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/food3.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/party1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/bussiness1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/event1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/portrait1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/portrait2.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+          
+                  <li>
+                    <img src="img/portrait3.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/stars1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/stars2.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/stars3.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/landscape1.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/landscape2.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                  <li>
+                    <img src="img/landscape3.jpg" alt="" />
+                    <div class="overlay"><span>Image title</span></div>
+                  </li>
+                </ul>
+              </div>
+        </section>  
+</body>
+<!-- Body End -->
+<!-- Footer Start -->
+<div class="footer" >
+    <a href="https://www.behance.net/allandefranca" target="_blank"><i class="fa fa-behance" style="font-size:24px"></i></a>
+    <a href="https://www.instagram.com/allandefranca" target="_blank"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+    <a href="https://www.youtube.com/channel/UCY77hUu3CMC7QEIUsFZmE5w/videos" target="_blank"><i class="fa fa-youtube" style="font-size:24px"></i></a>
+</div>
+<!-- Footer end -->
+<script>
+  document.querySelectorAll('[wm-nav]').forEach(link => {
+    const conteudo = document.getElementById('content')
+    link.onclick = function(e) {
+        e.preventDefault()
+        fetch(link.getAttribute('wm-nav'))
+            .then(resp => resp.text())
+            .then(html => conteudo.innerHTML = html)
+            .then(changeNavColor(link.id))
+    }
+    
+  })
+</script>
+
+<script src="./js/navbar.js"> </script>
+<script src="./js/buttonAction.js"> </script>
+
+</html>
