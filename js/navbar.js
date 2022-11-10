@@ -9,7 +9,11 @@ function changeNavColor(a) {
     mybutton.innerHTML = "Avocado Production";
     mybutton.style.color = "#86cd60";
     mybutton.setAttribute("href", "#design")
-    
+
+    document.querySelectorAll("[nav-span]").forEach(link => {
+      link.setAttribute("style", "border-top: 2px solid #86cd60;")
+    })
+
     let mynavChangeDesign = document.getElementById("design")
     mynavChangeDesign.setAttribute("wm-nav", "src/projects.html")
 
@@ -32,6 +36,9 @@ function changeNavColor(a) {
     mybutton.style.color = "#F89100";
     mybutton.setAttribute("href", "index.html")
 
+    document.querySelectorAll("[nav-span]").forEach(link => {
+      link.setAttribute("style", "border-top: 2px solid #F89100;")
+    })
 
     let mynavChangeDesign = document.getElementById("photography")
     mynavChangeDesign.setAttribute("wm-nav", "src/design.html")
