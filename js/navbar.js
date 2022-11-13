@@ -21,6 +21,9 @@ function changeNavColor(a) {
     mynavChangeProject.setAttribute("wm-nav", "src/design.html")  
     mynavChangeProject.style.color = "#fff"   
 
+    let mynavChangeContact = document.getElementById("contact")
+    mynavChangeContact.setAttribute("wm-nav", "src/contact_design.html")  
+
     mynavChangeDesign.id = "photography"
     mynavChangeDesign.innerHTML = "Photography"  
 
@@ -46,6 +49,9 @@ function changeNavColor(a) {
     let mynavChangeProject = document.getElementById("project")
     mynavChangeProject.setAttribute("wm-nav", "src/projects.html")
     mynavChangeProject.style.color = "#fff" 
+
+    let mynavChangeContact = document.getElementById("contact")
+    mynavChangeContact.setAttribute("wm-nav", "src/contact_photo.html")  
 
     mynavChangeDesign.id = "design"
     mynavChangeDesign.innerHTML = "Design"
